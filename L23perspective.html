@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Perpestive</title>
+	<style type="text/css">
+
+		*{
+			perspective: 500px;
+		}
+
+		
+		body{
+			height: 100vh;
+			display: grid;
+			place-items: center;
+		}
+
+		.container{
+/*			perspective: 500px;*/
+		}
+
+		.container img{
+			width:300px;
+
+			transition: transform 2s linear;
+		}
+
+		.container img:hover{
+/*			transform: translateZ(300px);*/
+			transform: translateZ(-300px);
+		}
+		
+	</style>
+	
+	
+
+	
+
+</head>
+<body>
+
+
+		<div class="container">
+		
+			<img src="./IMG/cutedog.jpg" alt="dog" />
+
+		</div>
+
+
+
+</body>
+</html>
+
+
+
+	

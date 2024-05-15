@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Transform Scale</title>
+	<style type="text/css">
+		
+		.container{
+			width: 1200px;
+			background-color: gray;
+
+
+/*			margin: 3rem 0;*/
+			margin: 48px 0;
+		}
+
+		.container .square{
+			width: 150px;
+			height: 50px;
+			background-color: red;
+			color: #fff;
+			font-size: 20pz;
+
+			text-align: center;
+			line-height: 50px;
+
+			border-radius: 3px;
+
+			transition-property: transform;
+			transition-duration: 5s;
+
+			transition-property: transform;
+			transition-duration: 5s;
+			transition-timing-function: linear;
+
+		}
+
+		
+		#scale:hover{
+/*			scale(anglexy)*/	
+			/*transform: scale(0);
+			tansform: scale(1);
+			tansform: scale(1.5);*/
+			tansform: scale(2);
+
+		}
+
+		#scalexy :hover{
+/*			scale(x,y)*/	
+/*			transform: scale(1,2);*/
+/*			tansform: scale(2,1);*/
+			tansform: scale(2,3);
+
+		}
+
+		#scalex:hover{
+/*			scaleX(anglex)*/
+/*			tansform: scaleX(0.5);*/
+			transform: scale(2);
+		}
+
+		#scaley:hover{
+/*			scaleX(angley)*/
+/*			tansform: scaleY(0.5);*/
+			transform: scale(2);
+		}
+
+
+		
+	</style>
+		
+		
+
+		
+</head>	
+<body>
+	
+	
+	<div class="container">
+		<div id="scale" class="square">DIV 1 XY</div>
+	</div>
+
+	<div class="container">
+		<div id="scalexy" class="square">DIV 2 X,Y</div>
+	</div>
+
+	<div class="container">
+		<div id="scale" class="square">DIV 3 X</div>
+	</div>
+
+	<div class="container">
+		<div id="scaley" class="square">DIV 4 Y</div>
+	</div>
+
+
+</body>
+</html>
+
+
